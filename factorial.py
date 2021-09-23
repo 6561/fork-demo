@@ -5,6 +5,13 @@ num = 8
 
 # To take input from the user
 #num = int(input("Enter a number: "))
+check = False
+while check==False:
+   try:
+      num = int(input("Enter a number: "))
+      check=True
+   except ValueError:
+      print("Try again")
 
 factorial = 1
 
